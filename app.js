@@ -96,6 +96,7 @@ function createButton(index) {
   newBtn.setAttribute("class", "answer");
   newBtn.appendChild(document.createTextNode("תשובה"));
   newBtn.setAttribute("id", "btn" + index);
+  newBtn.setAttribute("animation", "fadeIn 3s")
   newBtn.addEventListener("click", function () {
     let answerParagraph = document.getElementById("answer" + index);
     answerParagraph.classList.toggle("notappear");
