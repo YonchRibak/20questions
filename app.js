@@ -96,7 +96,7 @@ function createButton(index) {
   newBtn.setAttribute("class", "answer");
   newBtn.appendChild(document.createTextNode("תשובה"));
   newBtn.setAttribute("id", "btn" + index);
-  newBtn.setAttribute("animation", "fadeIn 3s")
+  newBtn.setAttribute("class", "animation3");
   newBtn.addEventListener("click", function () {
     let answerParagraph = document.getElementById("answer" + index);
     answerParagraph.classList.toggle("notappear");
@@ -117,7 +117,7 @@ function createIconRight() {
     "src",
     "https://img.icons8.com/dotty/80/000000/facebook-like.png"
   );
-  imgLike.setAttribute("class", "right");
+  imgLike.setAttribute("class", "right animation4");
 
   return imgLike;
 }
@@ -128,7 +128,7 @@ function createIconWrong() {
     "src",
     "https://img.icons8.com/dotty/80/000000/thumbs-down.png"
   );
-  imgUnlike.setAttribute("class", "wrong");
+  imgUnlike.setAttribute("class", "wrong animation4");
 
   return imgUnlike;
 }
