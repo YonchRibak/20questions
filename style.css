@@ -71,6 +71,7 @@ h3 {
   border: solid 4px;
   outline: solid 1px #624151;
   border-color: whitesmoke;
+  border-radius: 50%;
   position: absolute;
   padding: 1%;
   width: 30px;
