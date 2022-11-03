@@ -52,11 +52,11 @@ h3 {
 }
 .animation3 {
   animation: fadeIn 3s;
-  animation-delay: 1s;
+ 
 }
 .animation4 {
   animation: fadeIn 3.5s;
-  animation-delay: 1s;
+
 }
 .questions p {
   overflow: auto;
