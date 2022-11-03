@@ -165,9 +165,8 @@ const form = document.forms[0];
 form.addEventListener("submit", function (e) {
   e.preventDefault();
   let nameValue = form.querySelector('input[type="text"]').value;
-  console.log(nameValue);
   let areatextValue = form.querySelector("#comment").value;
-  console.log(areatextValue);
+
 
   fetch(
     "https://api.airtable.com/v0/appTwc4hdNHTfYPej/commentsFromTrivia?api_key=keyrLBP7eOuED5fyV",
@@ -186,4 +185,5 @@ form.addEventListener("submit", function (e) {
   )
     .then((res) => res.json())
     .catch((err) => console.log(err));
+  form.reset();
 });
